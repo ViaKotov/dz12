@@ -4,13 +4,16 @@ main{
         padding: 100px 0 111px;
         background-color: $second-bg-color;
         .banner{
+            max-width: $body-max-width;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: flex-start;
             .banner__description{
                 @extend %column-flexed;
                 text-align: left;
                 color: $banner-font-color;
+                width: 50%;
                 .banner__description-title{
                     display: inline;
                     span{
@@ -18,7 +21,7 @@ main{
                         font-weight: 1000;
                         font-size: 55px;
                         text-transform: uppercase;
-                    }
+                    } 
                 }
                 .banner__description-subtitle{
                     padding: 10px 0 0;

@@ -115,13 +115,16 @@ main .banner__wrapper {
   background-color: #f6f2f2;
 }
 main .banner__wrapper .banner {
+  max-width: 1250px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 main .banner__wrapper .banner .banner__description {
   text-align: left;
   color: #000000;
+  width: 50%;
 }
 main .banner__wrapper .banner .banner__description .banner__description-title {
   display: inline;
@@ -203,6 +206,7 @@ main .offer {
 }
 main .offer .offer__description {
   color: #333333;
+  width: 50%;
 }
 main .offer .offer__description .offer__description-title span {
   text-transform: uppercase;
@@ -237,7 +241,7 @@ main .offer .offer__description .offer__description-link a:hover {
 }
 main .offer .offer__items {
   flex-wrap: wrap;
-  max-width: 50%;
+  width: 50%;
   justify-content: space-between;
 }
 main .offer .offer__items .offer__items-item {

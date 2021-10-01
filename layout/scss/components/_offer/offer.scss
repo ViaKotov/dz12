@@ -7,6 +7,7 @@ main{
         .offer__description{
             @extend %column-flexed;
             color: $offer-font-color;
+            width: 50%;
             .offer__description-title{
                 span{
                     text-transform: uppercase;
@@ -44,7 +45,7 @@ main{
         .offer__items{
             @extend %row-flexed;
             flex-wrap: wrap;
-            max-width: 50%;
+            width: 50%;
             justify-content: space-between;
             .offer__items-item{
                 @extend %column-flexed;
