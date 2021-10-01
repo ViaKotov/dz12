@@ -1,6 +1,6 @@
 main{
     .offer{
-        margin-top: 110px;
+        padding-top: 110px;
         @extend %row-flexed;
         align-items: flex-start;
         justify-content: space-between;
@@ -11,24 +11,33 @@ main{
                 span{
                     text-transform: uppercase;
                     font-size: 42px;
-                    font-weight: normal;
+                    font-weight: bold;
                 }
             }
             .offer__description-subtitle{
+                padding: 28px 0 0;
                 max-width: $subtitle-max-width;
+                line-height: 28px;
             }
             .offer__description-link{
                 display: inline;
+                padding: 45px 0 0;
                 a{
                     display: inline-block;
                     border-radius: 5px;
-                    padding: 20px 64px;
+                    padding: 16px 70px;
                     text-transform: capitalize;
-                    font-size: 16px;
+                    font-size: 15px;
                     text-decoration: none;
                     color: $offer-btn-font-color;
                     border: solid 2px $offer-btn-border-color;
                     background-color: $offer-btn-bg-color;
+                    font-weight: bold;
+                    transition: .2s;
+                }
+                a:hover{
+                    color: $offer-btn-bg-color;
+                    background-color: $offer-btn-font-color;
                 }
             }
         }
@@ -36,12 +45,13 @@ main{
             @extend %row-flexed;
             flex-wrap: wrap;
             max-width: 50%;
+            justify-content: space-between;
             .offer__items-item{
                 @extend %column-flexed;
                 max-width: 50%;
                 padding: 0 0 50px;
                 .offer__item-icon{
-                    padding: 0 0 30px;
+                    padding: 0 0 20px;
                 }
                 .offer__item-title{
                     text-transform: capitalize;

@@ -4,7 +4,6 @@ main{
         padding: 100px 0 111px;
         background-color: $second-bg-color;
         .banner{
-            max-width: $body-max-width;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -17,13 +16,12 @@ main{
                     span{
                         display: inline-block;
                         font-weight: 1000;
-                        font-size: 60px;
-                        line-height: 72px;
+                        font-size: 55px;
                         text-transform: uppercase;
                     }
                 }
                 .banner__description-subtitle{
-                    padding: 0 0 0;
+                    padding: 10px 0 0;
                     p{
                         font-size: 16px;
                         line-height: 28px;
@@ -33,11 +31,11 @@ main{
                 }
                 .banner__description-link{
                     display: inline;
-                    padding: 45px 0 0;
+                    padding: 30px 0 0;
                     a{
                         display: inline-block;
                         border-radius: 5px;
-                        padding: 20px 64px;
+                        padding: 16px 70px;
                         text-transform: capitalize;
                         background-color: $banner-btn-bg-color;
                         text-decoration: none;
@@ -53,10 +51,9 @@ main{
                 } 
             }
             .banner__video{
-                display: flex;
-                align-items: center;
                 img{
-                    box-shadow: 0px 0px 60px rgba($color: #000000, $alpha: 0.35);
+                    
+                    box-shadow: 0px 0px 60px rgba($color: #7c7a71, $alpha: 0.6);
                 }
             }
         }

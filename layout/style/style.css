@@ -1,4 +1,82 @@
+@charset "UTF-8";
+/* Указываем box sizing */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +115,6 @@ main .banner__wrapper {
   background-color: #f6f2f2;
 }
 main .banner__wrapper .banner {
-  max-width: 1250px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -52,12 +129,11 @@ main .banner__wrapper .banner .banner__description .banner__description-title {
 main .banner__wrapper .banner .banner__description .banner__description-title span {
   display: inline-block;
   font-weight: 1000;
-  font-size: 60px;
-  line-height: 72px;
+  font-size: 55px;
   text-transform: uppercase;
 }
 main .banner__wrapper .banner .banner__description .banner__description-subtitle {
-  padding: 0 0 0;
+  padding: 10px 0 0;
 }
 main .banner__wrapper .banner .banner__description .banner__description-subtitle p {
   font-size: 16px;
@@ -66,12 +142,12 @@ main .banner__wrapper .banner .banner__description .banner__description-subtitle
 }
 main .banner__wrapper .banner .banner__description .banner__description-link {
   display: inline;
-  padding: 45px 0 0;
+  padding: 30px 0 0;
 }
 main .banner__wrapper .banner .banner__description .banner__description-link a {
   display: inline-block;
   border-radius: 5px;
-  padding: 20px 64px;
+  padding: 16px 70px;
   text-transform: capitalize;
   background-color: #ff2d2d;
   text-decoration: none;
@@ -84,12 +160,8 @@ main .banner__wrapper .banner .banner__description .banner__description-link a:h
   background-color: #313030;
   color: #ff2d2d;
 }
-main .banner__wrapper .banner .banner__video {
-  display: flex;
-  align-items: center;
-}
 main .banner__wrapper .banner .banner__video img {
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 60px rgba(124, 122, 113, 0.6);
 }
 
 header {
@@ -99,12 +171,14 @@ header {
 }
 header .menu {
   background-color: #313030;
-  line-height: 1.2;
-  font-size: 16px;
+  font-size: 14px;
 }
 header .menu .menu__list {
   text-align: center;
   text-transform: uppercase;
+}
+header .menu .menu__list .menu__list-item:not(:last-child) {
+  padding-right: 17px;
 }
 header .menu .menu__list .menu__list-item {
   display: inline;
@@ -114,7 +188,7 @@ header .menu .menu__list .menu__list-item a {
   text-decoration: none;
   color: #e0e0e0;
   font-weight: bold;
-  padding: 45px 24px 34px;
+  padding: 35px 23px;
   background-color: #313030;
   transition: 0.2s;
 }
@@ -123,7 +197,7 @@ header .menu .menu__list .menu__list-item a:hover {
 }
 
 main .offer {
-  margin-top: 110px;
+  padding-top: 110px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -133,35 +207,45 @@ main .offer .offer__description {
 main .offer .offer__description .offer__description-title span {
   text-transform: uppercase;
   font-size: 42px;
-  font-weight: normal;
+  font-weight: bold;
 }
 main .offer .offer__description .offer__description-subtitle {
+  padding: 28px 0 0;
   max-width: 520px;
+  line-height: 28px;
 }
 main .offer .offer__description .offer__description-link {
   display: inline;
+  padding: 45px 0 0;
 }
 main .offer .offer__description .offer__description-link a {
   display: inline-block;
   border-radius: 5px;
-  padding: 20px 64px;
+  padding: 16px 70px;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   color: #ff2d2d;
   border: solid 2px #ff0000;
   background-color: #ffffff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+main .offer .offer__description .offer__description-link a:hover {
+  color: #ffffff;
+  background-color: #ff2d2d;
 }
 main .offer .offer__items {
   flex-wrap: wrap;
   max-width: 50%;
+  justify-content: space-between;
 }
 main .offer .offer__items .offer__items-item {
   max-width: 50%;
   padding: 0 0 50px;
 }
 main .offer .offer__items .offer__items-item .offer__item-icon {
-  padding: 0 0 30px;
+  padding: 0 0 20px;
 }
 main .offer .offer__items .offer__items-item .offer__item-title {
   text-transform: capitalize;
