@@ -1,0 +1,37 @@
+header{
+    width: 100%;
+    padding:29px 0 0;
+    background-color: $second-bg-color;
+    .menu{
+        background-color: $nav-bg-common-color;
+        line-height: 1.2;
+        font-size: 16px;
+
+        .menu__list
+        {
+            text-align: center;
+            text-transform: uppercase;
+
+            .menu__list-item
+            {
+                display: inline;
+
+                a
+                {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $nav-font-color;
+                    font-weight: bold;
+                    padding: 45px 24px 34px;
+                    background-color: $nav-bg-common-color; 
+                    transition: .2s;
+                }
+                
+                a:hover
+                {
+                    background-color: $nav-bg-hover-color;
+                }
+            }
+        }
+    }
+}
