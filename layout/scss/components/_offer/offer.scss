@@ -21,19 +21,9 @@ main{
                 line-height: 28px;
             }
             .offer__description-link{
-                display: inline;
                 padding: 45px 0 0;
                 a{
-                    display: inline-block;
-                    border-radius: 5px;
-                    padding: 16px 70px;
-                    text-transform: capitalize;
-                    font-size: 15px;
-                    text-decoration: none;
-                    color: $offer-btn-font-color;
-                    border: solid 2px $offer-btn-border-color;
-                    background-color: $offer-btn-bg-color;
-                    font-weight: bold;
+                    @include valid-button(15px, capitalize, none, $offer-btn-font-color, bold, solid, 2px, $offer-btn-border-color, 5px, $offer-btn-bg-color, $offer-btn-font-color, $offer-btn-bg-color);
                     transition: .2s;
                 }
                 a:hover{
@@ -62,7 +52,6 @@ main{
                 .offer__item-description{
                     line-height: 28px;
                     font-size: 16px;
-                    max-width: 300px;
                 }
             }
         }
