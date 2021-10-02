@@ -22,12 +22,8 @@
         .offer__description-link{
             padding: 45px 0 0;
             a{
-                @include valid-button(15px, capitalize, none, $offer-btn-font-color, bold, solid, 2px, $offer-btn-border-color, 5px, $offer-btn-bg-color, $offer-btn-font-color, $offer-btn-bg-color);
+                @include valid-button(15px, capitalize, none, $offer-btn-font-color, bold, solid, 2px, $offer-btn-border-color, 5px, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color);
                 transition: .2s;
-            }
-            a:hover{
-                color: $offer-btn-bg-color;
-                background-color: $offer-btn-font-color;
             }
         }
     }

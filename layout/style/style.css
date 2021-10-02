@@ -237,10 +237,6 @@ header .menu .menu__list .menu__list-item a:hover {
   transition: 0.2s;
 }
 .offer .offer__description .offer__description-link a:hover {
-  color: #ff2d2d;
-  background-color: #ffffff;
-}
-.offer .offer__description .offer__description-link a:hover {
   color: #ffffff;
   background-color: #ff2d2d;
 }
