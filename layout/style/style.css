@@ -77,17 +77,17 @@ select {
     scroll-behavior: auto !important;
   }
 }
-main .offer .offer__items .offer__items-item, main .offer .offer__description, main .banner__wrapper .banner .banner__description {
+.offer .offer__items .offer__items-item, .offer .offer__description, .banner__wrapper .banner .banner__description {
   display: flex;
   flex-direction: column;
 }
 
-main .offer .offer__items, main .offer {
+.offer .offer__items, .offer {
   display: flex;
   flex-direction: row;
 }
 
-main .offer .offer__description .offer__description-link a, main .banner__wrapper .banner .banner__description .banner__description-link a {
+.offer .offer__description .offer__description-link a, .banner__wrapper .banner .banner__description .banner__description-link a {
   padding: 16px 70px;
 }
 
@@ -113,44 +113,44 @@ body {
   border: solid 1px black;
 }
 
-main .banner__wrapper {
+.banner__wrapper {
   width: 100%;
   padding: 100px 0 111px;
   background-color: #f6f2f2;
 }
-main .banner__wrapper .banner {
+.banner__wrapper .banner {
   max-width: 1250px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-main .banner__wrapper .banner .banner__description {
+.banner__wrapper .banner .banner__description {
   text-align: left;
   color: #000000;
   width: 50%;
 }
-main .banner__wrapper .banner .banner__description .banner__description-title {
+.banner__wrapper .banner .banner__description .banner__description-title {
   display: inline;
 }
-main .banner__wrapper .banner .banner__description .banner__description-title span {
+.banner__wrapper .banner .banner__description .banner__description-title span {
   display: inline-block;
   font-weight: 1000;
   font-size: 55px;
   text-transform: uppercase;
 }
-main .banner__wrapper .banner .banner__description .banner__description-subtitle {
+.banner__wrapper .banner .banner__description .banner__description-subtitle {
   padding: 10px 0 0;
 }
-main .banner__wrapper .banner .banner__description .banner__description-subtitle p {
+.banner__wrapper .banner .banner__description .banner__description-subtitle p {
   font-size: 16px;
   line-height: 28px;
   max-width: 520px;
 }
-main .banner__wrapper .banner .banner__description .banner__description-link {
+.banner__wrapper .banner .banner__description .banner__description-link {
   padding: 30px 0 0;
 }
-main .banner__wrapper .banner .banner__description .banner__description-link a {
+.banner__wrapper .banner .banner__description .banner__description-link a {
   font-size: 16px;
   text-transform: capitalize;
   text-decoration: none;
@@ -162,11 +162,13 @@ main .banner__wrapper .banner .banner__description .banner__description-link a {
   display: inline-block;
   transition: 0.2s;
 }
-main .banner__wrapper .banner .banner__description .banner__description-link a:hover {
+.banner__wrapper .banner .banner__description .banner__description-link a:hover {
   color: #ff2d2d;
   background-color: #313030;
 }
-main .banner__wrapper .banner .banner__video {
+.banner__wrapper .banner .banner__video {
+  display: flex;
+  flex-wrap: wrap;
   box-shadow: 0px 0px 60px rgba(124, 122, 113, 0.6);
 }
 
@@ -200,29 +202,29 @@ header .menu .menu__list .menu__list-item a:hover {
   background-color: #ff3f40;
 }
 
-main .offer {
+.offer {
   padding-top: 110px;
   align-items: flex-start;
   justify-content: space-between;
 }
-main .offer .offer__description {
+.offer .offer__description {
   color: #333333;
   width: 50%;
 }
-main .offer .offer__description .offer__description-title span {
+.offer .offer__description .offer__description-title span {
   text-transform: uppercase;
   font-size: 42px;
   font-weight: bold;
 }
-main .offer .offer__description .offer__description-subtitle {
+.offer .offer__description .offer__description-subtitle {
   padding: 28px 0 0;
   max-width: 520px;
   line-height: 28px;
 }
-main .offer .offer__description .offer__description-link {
+.offer .offer__description .offer__description-link {
   padding: 45px 0 0;
 }
-main .offer .offer__description .offer__description-link a {
+.offer .offer__description .offer__description-link a {
   font-size: 15px;
   text-transform: capitalize;
   text-decoration: none;
@@ -234,32 +236,32 @@ main .offer .offer__description .offer__description-link a {
   display: inline-block;
   transition: 0.2s;
 }
-main .offer .offer__description .offer__description-link a:hover {
+.offer .offer__description .offer__description-link a:hover {
   color: #ff2d2d;
   background-color: #ffffff;
 }
-main .offer .offer__description .offer__description-link a:hover {
+.offer .offer__description .offer__description-link a:hover {
   color: #ffffff;
   background-color: #ff2d2d;
 }
-main .offer .offer__items {
+.offer .offer__items {
   flex-wrap: wrap;
   width: 50%;
   justify-content: space-between;
 }
-main .offer .offer__items .offer__items-item {
+.offer .offer__items .offer__items-item {
   max-width: 50%;
   padding: 0 0 50px;
 }
-main .offer .offer__items .offer__items-item .offer__item-icon {
+.offer .offer__items .offer__items-item .offer__item-icon {
   padding: 0 0 20px;
 }
-main .offer .offer__items .offer__items-item .offer__item-title {
+.offer .offer__items .offer__items-item .offer__item-title {
   text-transform: capitalize;
   font-size: 24px;
   color: #333333;
 }
-main .offer .offer__items .offer__items-item .offer__item-description {
+.offer .offer__items .offer__items-item .offer__item-description {
   line-height: 28px;
   font-size: 16px;
 }
